@@ -33,5 +33,8 @@
   * --project and --zone can be omitted if they're set in default properties.
 
         gcloud compute ssh --project=PROJECT --zone=VM_Zone vm_name
-      
-      
+
+## SCP
+* SCP works similarly to SSH
+
+       gcloud compute scp ./local_file gcp-vm:~/
