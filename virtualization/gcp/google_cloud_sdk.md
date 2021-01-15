@@ -30,7 +30,7 @@
   
 ## SSH
 * Run to connect SSH in a project. There will be a prompt to install Alpha component.
-  * --project and --zone can be omitted if they're set in default configuration.
+  * --project and --zone can be omitted if they're set in default properties.
 
       gcloud compute ssh --project=PROJECT --zone=VM_Zone vm_name
       
