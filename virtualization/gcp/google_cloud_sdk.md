@@ -21,8 +21,8 @@
     
   * Init
   
-    gcloud init
+        gcloud init
   
   * Check configuration
   
-    gcloud info
+        gcloud info
