@@ -19,10 +19,13 @@
       source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
     ~~~
     
+  * Check some basic information
+
+        gcloud version
+        gcloud info
+
   * Init
   
         gcloud init
   
-  * Check configuration
-  
-        gcloud info
+
