@@ -1,6 +1,6 @@
 # Instructions for using Google Cloud SDK
 ## Installation on Mac
-  * homebrew  
+  * homebrew installation 
     ~~~
     brew install --cask google-cloud-sdk
     
@@ -19,3 +19,10 @@
       source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.fish.inc"
     ~~~
     
+  * Init
+  
+    gcloud init
+  
+  * Check configuration
+  
+    gcloud info
