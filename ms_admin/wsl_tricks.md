@@ -20,7 +20,15 @@ cd && \
 wget https://gist.githubusercontent.com/simonista/8703722/raw/d08f2b4dc10452b97d3ca15386e9eed457a53c61/.vimrc && \
 sed -i 's/^set tabstop=2/set tabstop=4/' .vimrc && \
 sed -i 's/^set shiftwidth=2/set shiftwidth=4/' .vimrc && \
-sed -i 's/^set softtabstop=2/set softtabstop=4/' .vimrc; \
+sed -i 's/^set softtabstop=2/set softtabstop=4/' .vimrc && \
+tee -a .vimrc > /dev/null <<EOT
+
+
+""" Added stuff
+" Better highlighting for autocompletion
+highlight Pmenu ctermbg=gray guibg=gray
+highlight PmenuSel ctermbg=cyan guibg=cyan ctermfg=black guifg=black
+EOT
 sudo sed -i 's/# set bell-style none/set bell-style none/' /etc/inputrc; \
 printf "\n# Stop bell sounds\nexport LESS=\"$LESS -R -Q\"" >> ~/.profile; \
 sudo chmod u+s /bin/ping
