@@ -9,6 +9,8 @@
     ~~~
     # Show current
     git config --get remote.origin.url
+    # More information about the origin
+    git remote -v show origin
     # Show new one
     git remote set-url origin https://new_url
     ~~~
