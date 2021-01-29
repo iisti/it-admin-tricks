@@ -17,18 +17,7 @@ sudo apt-get update; \
 sudo apt-get -y upgrade; \
 sudo apt-get install -y tmux wget vim; \
 cd && \
-wget https://gist.githubusercontent.com/simonista/8703722/raw/d08f2b4dc10452b97d3ca15386e9eed457a53c61/.vimrc && \
-sed -i 's/^set tabstop=2/set tabstop=4/' .vimrc && \
-sed -i 's/^set shiftwidth=2/set shiftwidth=4/' .vimrc && \
-sed -i 's/^set softtabstop=2/set softtabstop=4/' .vimrc && \
-tee -a .vimrc > /dev/null <<EOT
-
-
-""" Added stuff
-" Better highlighting for autocompletion
-highlight Pmenu ctermbg=gray guibg=gray
-highlight PmenuSel ctermbg=cyan guibg=cyan ctermfg=black guifg=black
-EOT
+wget https://gist.githubusercontent.com/iisti/bf7769f0eaa8e863e7cb0dd324b6dcf5/raw/ed4169aa875a73013ada73f71b9f8f577c2cb981/.vimrc ; \
 sudo sed -i 's/# set bell-style none/set bell-style none/' /etc/inputrc; \
 printf "\n# Stop bell sounds\nexport LESS=\"$LESS -R -Q\"" >> ~/.profile; \
 sudo chmod u+s /bin/ping
