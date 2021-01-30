@@ -34,7 +34,8 @@ ping: socket: Operation not permitted
 `sudo chmod u+s /bin/ping`
 
 ## vimrc
-* https://gist.github.com/simonista/8703722
+* https://gist.githubusercontent.com/iisti/bf7769f0eaa8e863e7cb0dd324b6dcf5/raw/ed4169aa875a73013ada73f71b9f8f577c2cb981/.vimrc
+  * The above is fork from this https://gist.github.com/simonista/8703722
 
 ## Disable bell
 * Source
